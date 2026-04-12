@@ -19,7 +19,7 @@ export default function Projects() {
     {
       name: t("projects.items.0.name"),
       description: t("projects.items.0.description"),
-      url: "https://linkbhub.ai-explorer.cn",
+      url: "https://linkhub.ai-explorer.cn",
       tags: ["Next.js", "AI", "SaaS"],
     },
   ];
@@ -95,7 +95,9 @@ export default function Projects() {
 
                 <h3
                   className="text-xl font-bold text-[#2D3436] mb-2 group-hover:text-[#00B894] transition-colors"
-                  style={{ fontFamily: "var(--font-clash), system-ui, sans-serif" }}
+                  style={{
+                    fontFamily: "var(--font-clash), system-ui, sans-serif",
+                  }}
                 >
                   {project.name}
                 </h3>

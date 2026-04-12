@@ -8,9 +8,9 @@ export default function Hero() {
   const { t } = useI18n();
 
   const socialLinks = [
-    { icon: Code2, href: "https://github.com", label: "GitHub" },
-    { icon: Bird, href: "https://twitter.com", label: "Twitter" },
-    { icon: Mail, href: "mailto:hello@ai-explorer.cn", label: "Email" },
+    { icon: Code2, href: "https://github.com/wanghao1993", label: "GitHub" },
+    { icon: Bird, href: "https://twitter.com/flowers_Z_z", label: "Twitter" },
+    { icon: Mail, href: "mailto:whao53333@gmail.com", label: "Email" },
   ];
 
   return (
@@ -29,7 +29,9 @@ export default function Hero() {
           className="w-28 h-28 md:w-32 md:h-32 mx-auto mb-8 rounded-full bg-gradient-to-br from-[#00B894] to-[#00CEC9] p-1"
         >
           <div className="w-full h-full rounded-full bg-[#F5F5F0] flex items-center justify-center">
-            <span className="text-4xl md:text-5xl font-bold text-[#2D3436]">IW</span>
+            <span className="text-4xl md:text-5xl font-bold text-[#2D3436]">
+              IW
+            </span>
           </div>
         </motion.div>
 

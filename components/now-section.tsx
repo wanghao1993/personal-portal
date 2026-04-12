@@ -50,7 +50,9 @@ export default function NowSection() {
                   </div>
                   <h3
                     className="text-2xl md:text-3xl font-bold text-[#2D3436] mb-4"
-                    style={{ fontFamily: "var(--font-clash), system-ui, sans-serif" }}
+                    style={{
+                      fontFamily: "var(--font-clash), system-ui, sans-serif",
+                    }}
                   >
                     {t("now.currentProject.name")}
                   </h3>
@@ -58,7 +60,7 @@ export default function NowSection() {
                     {t("now.currentProject.description")}
                   </p>
                   <motion.a
-                    href="https://linkbhub.ai-explorer.cn"
+                    href="https://linkhub.ai-explorer.cn"
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{ x: 4 }}
