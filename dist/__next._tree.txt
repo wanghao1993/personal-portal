@@ -1,4 +1,4 @@
-:HL["/_next/static/chunks/0iz609nic479_.css","style"]
+:HL["/_next/static/chunks/0fxs3ys2ua99x.css","style"]
 :HL["/_next/static/media/70bc3e132a0a741e-s.p.1409xf.ylxg8g.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700&f[]=instrument-sans@400,500,600,700&display=swap","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"23KWX4KXfjd27OliZcVYV"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"Jew1V0uBLYqfME_WGyAw-"}
