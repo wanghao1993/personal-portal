@@ -1,8 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Code2, Bird, Mail, Heart } from "lucide-react";
+import { Code2, Bird, Mail, Heart, MessageCircle } from "lucide-react";
 import { useI18n } from "@/lib/i18n/client";
+import WeChatButton from "./wechat-button";
 
 export default function Footer() {
   const { t, locale, setLocale } = useI18n();
@@ -12,6 +13,7 @@ export default function Footer() {
     { icon: Code2, href: "https://github.com", label: "GitHub" },
     { icon: Bird, href: "https://twitter.com", label: "Twitter" },
     { icon: Mail, href: "mailto:hello@ai-explorer.cn", label: "Email" },
+    { icon: MessageCircle, href: "#", label: "WeChat" },
   ];
 
   const toggleLanguage = () => {
@@ -31,16 +33,18 @@ export default function Footer() {
                 <motion.a
                   key={link.label}
                   href={link.href}
-                  target="_blank"
+                  target={link.label === "WeChat" ? undefined : "_blank"}
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.1, y: -2 }}
-                  whileTap={{ scale: 0.95 }}
+                  whileTap={link.label === "WeChat" ? undefined : { scale: 0.95 }}
+                  onClick={link.label === "WeChat" ? (e) => { e.preventDefault(); } : undefined}
                   className="p-2 rounded-full bg-[#F5F5F0] text-[#636E72] hover:text-[#00B894] hover:bg-[#00B894]/10 transition-all duration-200"
                   aria-label={link.label}
                 >
                   <link.icon size={18} />
                 </motion.a>
               ))}
+              <WeChatButton />
             </div>
 
             {/* Copyright */}

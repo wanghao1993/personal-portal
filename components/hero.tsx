@@ -1,8 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Code2, Bird, Mail } from "lucide-react";
+import { Code2, Bird, Mail, MessageCircle } from "lucide-react";
 import { useI18n } from "@/lib/i18n/client";
+import WeChatButton from "./wechat-button";
 
 export default function Hero() {
   const { t } = useI18n();
@@ -12,6 +13,8 @@ export default function Hero() {
     { icon: Bird, href: "https://twitter.com/flowers_Z_z", label: "Twitter" },
     { icon: Mail, href: "mailto:whao53333@gmail.com", label: "Email" },
   ];
+
+  const WeChatIcon = MessageCircle;
 
   return (
     <section className="min-h-screen flex flex-col justify-center items-center px-6 py-20 md:py-32 relative overflow-hidden">
@@ -97,6 +100,7 @@ export default function Hero() {
               <link.icon size={22} />
             </motion.a>
           ))}
+          <WeChatButton />
         </motion.div>
       </motion.div>
 
