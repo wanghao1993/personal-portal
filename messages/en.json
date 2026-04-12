@@ -1,0 +1,74 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "blog": "Blog",
+    "about": "About"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Isaac Wang",
+    "title": "Full Stack & Web3 Developer",
+    "description": "Building innovative solutions at the intersection of web and blockchain technology. Passionate about creating seamless user experiences and decentralized applications.",
+    "cta": "Get in Touch"
+  },
+  "now": {
+    "title": "What I'm working on",
+    "subtitle": "Current focus and projects",
+    "currentProject": {
+      "name": "Linhub",
+      "description": "A powerful link management and aggregation platform with AI-powered categorization, collaboration features, and seamless integration capabilities.",
+      "status": "In Development",
+      "link": "Visit Linhub →"
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Things I've built",
+    "viewProject": "View Project",
+    "items": [
+      {
+        "name": "Linhub",
+        "description": "Link management and aggregation platform with AI-powered categorization and collaboration features.",
+        "url": "https://linkbhub.ai-explorer.cn",
+        "tags": ["Next.js", "AI", "SaaS"]
+      }
+    ]
+  },
+  "blog": {
+    "title": "Latest Posts",
+    "subtitle": "Thoughts and insights",
+    "readMore": "Read More",
+    "visitBlog": "Visit Blog →",
+    "posts": [
+      {
+        "title": "Building Scalable Web3 Applications",
+        "excerpt": "Lessons learned from developing decentralized applications that can handle real-world scale.",
+        "date": "Apr 10, 2025",
+        "readTime": "5 min read"
+      },
+      {
+        "title": "The Future of AI in Web Development",
+        "excerpt": "How artificial intelligence is reshaping the way we build and deploy web applications.",
+        "date": "Apr 5, 2025",
+        "readTime": "4 min read"
+      },
+      {
+        "title": "Optimizing React Performance",
+        "excerpt": "Practical techniques for improving the performance of your React applications.",
+        "date": "Mar 28, 2025",
+        "readTime": "6 min read"
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "© {year} Isaac Wang. All rights reserved.",
+    "madeWith": "Built with Next.js, Tailwind CSS & shadcn/ui",
+    "language": "Language"
+  },
+  "social": {
+    "github": "GitHub",
+    "twitter": "Twitter",
+    "email": "Email"
+  }
+}

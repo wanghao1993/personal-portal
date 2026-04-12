@@ -1,0 +1,74 @@
+{
+  "nav": {
+    "home": "首页",
+    "projects": "项目",
+    "blog": "博客",
+    "about": "关于"
+  },
+  "hero": {
+    "greeting": "你好，我是",
+    "name": "Isaac Wang",
+    "title": "全栈 & Web3 开发者",
+    "description": "在网络与区块链技术交汇处构建创新解决方案。专注于创造无缝的用户体验和去中心化应用。",
+    "cta": "联系我"
+  },
+  "now": {
+    "title": "我正在做什么",
+    "subtitle": "当前专注于这些项目",
+    "currentProject": {
+      "name": "Linhub",
+      "description": "一个强大的链接管理和聚合平台，具备AI智能分类、协作功能和无缝集成能力。",
+      "status": "开发中",
+      "link": "访问 Linhub →"
+    }
+  },
+  "projects": {
+    "title": "项目",
+    "subtitle": "我构建的作品",
+    "viewProject": "查看项目",
+    "items": [
+      {
+        "name": "Linhub",
+        "description": "链接管理和聚合平台，具备AI智能分类和协作功能。",
+        "url": "https://linkbhub.ai-explorer.cn",
+        "tags": ["Next.js", "AI", "SaaS"]
+      }
+    ]
+  },
+  "blog": {
+    "title": "最新文章",
+    "subtitle": "思考与见解",
+    "readMore": "阅读更多",
+    "visitBlog": "访问博客 →",
+    "posts": [
+      {
+        "title": "构建可扩展的 Web3 应用",
+        "excerpt": "从开发能够处理真实世界规模的去中心化应用中学到的经验教训。",
+        "date": "2025年4月10日",
+        "readTime": "5 分钟阅读"
+      },
+      {
+        "title": "AI 在网络开发中的未来",
+        "excerpt": "人工智能如何重塑我们构建和部署网络应用的方式。",
+        "date": "2025年4月5日",
+        "readTime": "4 分钟阅读"
+      },
+      {
+        "title": "优化 React 性能",
+        "excerpt": "提升 React 应用性能的实用技巧。",
+        "date": "2025年3月28日",
+        "readTime": "6 分钟阅读"
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "© {year} Isaac Wang. 保留所有权利。",
+    "madeWith": "使用 Next.js、Tailwind CSS 和 shadcn/ui 构建",
+    "language": "语言"
+  },
+  "social": {
+    "github": "GitHub",
+    "twitter": "Twitter",
+    "email": "邮箱"
+  }
+}
