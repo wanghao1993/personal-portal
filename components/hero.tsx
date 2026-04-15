@@ -9,6 +9,15 @@ import { useEffect } from "react";
 
 export default function Hero() {
   const { t } = useI18n();
+
+  const socialLinks = [
+    { icon: Code2, href: "https://github.com/wanghao1993", label: "GitHub" },
+    { icon: Bird, href: "https://twitter.com/flowers_Z_z", label: "Twitter" },
+    { icon: Mail, href: "mailto:whao53333@gmail.com", label: "Email" },
+  ];
+
+  const WeChatIcon = MessageCircle;
+
   useEffect(() => {
     new Aegis({
       id: "ok85Zsbp9Wna55pX45", // 上报 id
@@ -18,13 +27,6 @@ export default function Hero() {
       hostUrl: "https://rumt-sg.com",
     });
   }, []);
-  const socialLinks = [
-    { icon: Code2, href: "https://github.com/wanghao1993", label: "GitHub" },
-    { icon: Bird, href: "https://twitter.com/flowers_Z_z", label: "Twitter" },
-    { icon: Mail, href: "mailto:whao53333@gmail.com", label: "Email" },
-  ];
-
-  const WeChatIcon = MessageCircle;
 
   return (
     <section className="min-h-screen flex flex-col justify-center items-center px-6 py-20 md:py-32 relative overflow-hidden">
