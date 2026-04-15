@@ -1,10 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Code2, Bird, Mail, MessageCircle } from "lucide-react";
+import { Code2, Bird, Mail } from "lucide-react";
 import { useI18n } from "@/lib/i18n/client";
 import WeChatButton from "./wechat-button";
-import Aegis from "aegis-web-sdk";
 import { useEffect } from "react";
 
 export default function Hero() {
@@ -16,16 +15,24 @@ export default function Hero() {
     { icon: Mail, href: "mailto:whao53333@gmail.com", label: "Email" },
   ];
 
-  const WeChatIcon = MessageCircle;
-
   useEffect(() => {
-    new Aegis({
-      id: "ok85Zsbp9Wna55pX45", // 上报 id
-      reportApiSpeed: true, // 接口测速
-      reportAssetSpeed: true, // 静态资源测速
-      spa: true, // spa 应用页面跳转的时候开启 pv 计算
-      hostUrl: "https://rumt-sg.com",
+    let active = true;
+
+    void import("aegis-web-sdk").then(({ default: Aegis }) => {
+      if (!active) return;
+
+      new Aegis({
+        id: "ok85Zsbp9Wna55pX45", // 上报 id
+        reportApiSpeed: true, // 接口测速
+        reportAssetSpeed: true, // 静态资源测速
+        spa: true, // spa 应用页面跳转的时候开启 pv 计算
+        hostUrl: "https://rumt-sg.com",
+      });
     });
+
+    return () => {
+      active = false;
+    };
   }, []);
 
   return (
@@ -98,7 +105,7 @@ export default function Hero() {
           transition={{ delay: 0.7 }}
           className="flex items-center justify-center gap-4"
         >
-          {socialLinks.map((link, index) => (
+          {socialLinks.map((link) => (
             <motion.a
               key={link.label}
               href={link.href}

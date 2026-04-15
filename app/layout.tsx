@@ -1,12 +1,7 @@
 import type { Metadata } from "next";
-import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { I18nProvider } from "@/components/i18n-provider";
 import { Analytics } from "@vercel/analytics/next";
-const jetbrainsMono = JetBrains_Mono({
-  variable: "--font-jetbrains",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Isaac Wang | Full Stack & Web3 Developer",
@@ -35,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${jetbrainsMono.variable} antialiased`}>
+    <html lang="en" className="antialiased">
       <head>
         <link
           rel="preconnect"
