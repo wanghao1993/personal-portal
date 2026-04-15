@@ -3,6 +3,7 @@ import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { I18nProvider } from "@/components/i18n-provider";
 import { Analytics } from "@vercel/analytics/next";
+import Script from "next/script";
 const jetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains",
   subsets: ["latin"],
@@ -47,6 +48,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
+
       <body className="min-h-screen">
         <I18nProvider>{children}</I18nProvider>
         <Analytics />
