@@ -1,9 +1,10 @@
 {
   "nav": {
     "home": "Home",
+    "now": "Now",
+    "aiNews": "AI News",
     "projects": "Projects",
-    "blog": "Blog",
-    "about": "About"
+    "blog": "Blog"
   },
   "hero": {
     "greeting": "Hi, I'm",
@@ -65,6 +66,11 @@
     "copyright": "© {year} Isaac Wang. All rights reserved.",
     "madeWith": "Built with Next.js, Tailwind CSS & shadcn/ui",
     "language": "Language"
+  },
+  "aiNews": {
+    "title": "AI Hotspots",
+    "subtitle": "Latest AI news from around the world",
+    "error": "Failed to load news. Please try again later."
   },
   "social": {
     "github": "GitHub",

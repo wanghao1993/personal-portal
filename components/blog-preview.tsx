@@ -56,7 +56,7 @@ export default function BlogPreview() {
   };
 
   return (
-    <section className="py-20 md:py-32 px-6">
+    <section id="blog" className="py-20 md:py-32 px-6">
       <div className="max-w-5xl mx-auto">
         {/* Section Header */}
         <motion.div

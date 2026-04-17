@@ -44,7 +44,7 @@ export default function Projects() {
   };
 
   return (
-    <section className="py-20 md:py-32 px-6 bg-white/50">
+    <section id="projects" className="py-20 md:py-32 px-6 bg-white/50">
       <div className="max-w-5xl mx-auto">
         {/* Section Header */}
         <motion.div

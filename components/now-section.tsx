@@ -8,7 +8,7 @@ export default function NowSection() {
   const { t } = useI18n();
 
   return (
-    <section className="py-20 md:py-32 px-6">
+    <section id="now" className="py-20 md:py-32 px-6">
       <div className="max-w-5xl mx-auto">
         {/* Section Header */}
         <motion.div

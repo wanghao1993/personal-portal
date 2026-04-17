@@ -36,7 +36,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center px-6 py-20 md:py-32 relative overflow-hidden">
+    <section id="hero" className="min-h-screen flex flex-col justify-center items-center px-6 py-20 md:py-32 relative overflow-hidden">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

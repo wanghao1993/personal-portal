@@ -1,9 +1,10 @@
 {
   "nav": {
     "home": "首页",
+    "now": "动态",
+    "aiNews": "AI热点",
     "projects": "项目",
-    "blog": "博客",
-    "about": "关于"
+    "blog": "博客"
   },
   "hero": {
     "greeting": "你好，我是",
@@ -65,6 +66,11 @@
     "copyright": "© {year} Isaac Wang. 保留所有权利。",
     "madeWith": "使用 Next.js、Tailwind CSS 和 shadcn/ui 构建",
     "language": "语言"
+  },
+  "aiNews": {
+    "title": "AI 热点",
+    "subtitle": "来自全球的最新 AI 资讯",
+    "error": "加载新闻失败，请稍后再试。"
   },
   "social": {
     "github": "GitHub",
